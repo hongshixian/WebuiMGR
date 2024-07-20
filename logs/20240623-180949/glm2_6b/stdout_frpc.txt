@@ -1,0 +1,22 @@
+2024/06/23 18:10:11 [1;34m[I] [service.go:301] [99d198ba27dd2fbf] login to server success, get run id [99d198ba27dd2fbf][0m
+2024/06/23 18:10:11 [1;34m[I] [proxy_manager.go:150] [99d198ba27dd2fbf] proxy added: [wsl-webui-glm2_6b][0m
+2024/06/23 18:10:11 [1;34m[I] [control.go:172] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] start proxy success[0m
+2024/06/23 18:10:24 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:31 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:31 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:32 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:33 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:34 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:35 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:35 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:35 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:36 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:36 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:36 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:36 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:36 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:37 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:10:44 [1;31m[E] [proxy.go:196] [99d198ba27dd2fbf] [wsl-webui-glm2_6b] connect to local service [127.0.0.1:25386] error: dial tcp 127.0.0.1:25386: connect: connection refused[0m
+2024/06/23 18:18:23 [1;34m[I] [service.go:301] [50cd41464ed5b914] login to server success, get run id [50cd41464ed5b914][0m
+2024/06/23 18:18:23 [1;34m[I] [proxy_manager.go:150] [50cd41464ed5b914] proxy added: [wsl-webui-glm2_6b][0m
+2024/06/23 18:18:23 [1;34m[I] [control.go:172] [50cd41464ed5b914] [wsl-webui-glm2_6b] start proxy success[0m

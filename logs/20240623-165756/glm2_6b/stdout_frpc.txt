@@ -1,0 +1,6 @@
+2024/06/23 16:58:11 [1;34m[I] [service.go:301] [5e89189a1059b9b9] login to server success, get run id [5e89189a1059b9b9][0m
+2024/06/23 16:58:11 [1;34m[I] [proxy_manager.go:150] [5e89189a1059b9b9] proxy added: [wsl-webui-glm2_6b][0m
+2024/06/23 16:58:11 [1;34m[I] [control.go:172] [5e89189a1059b9b9] [wsl-webui-glm2_6b] start proxy success[0m
+2024/06/23 17:00:23 [1;34m[I] [service.go:301] [1c775a2f5302c9b2] login to server success, get run id [1c775a2f5302c9b2][0m
+2024/06/23 17:00:23 [1;34m[I] [proxy_manager.go:150] [1c775a2f5302c9b2] proxy added: [wsl-webui-glm2_6b][0m
+2024/06/23 17:00:23 [1;34m[I] [control.go:172] [1c775a2f5302c9b2] [wsl-webui-glm2_6b] start proxy success[0m

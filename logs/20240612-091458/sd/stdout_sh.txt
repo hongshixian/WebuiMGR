@@ -1,0 +1,20 @@
+Warning: k_diffusion not found at path /home/lihao/git/stable-diffusion-webui/repositories/k-diffusion/k_diffusion/sampling.py
+/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN5torch3jit17parseSchemaOrNameERKSs'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Error setting up CodeFormer:
+Traceback (most recent call last):
+  File "/home/lihao/git/stable-diffusion-webui/modules/codeformer_model.py", line 37, in setup_model
+    from facelib.utils.face_restoration_helper import FaceRestoreHelper
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/utils/face_restoration_helper.py", line 7, in <module>
+    from facelib.detection import init_detection_model
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/detection/__init__.py", line 10, in <module>
+    from .retinaface.retinaface import RetinaFace
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/detection/retinaface/retinaface.py", line 14, in <module>
+    from basicsr.utils.misc import get_device
+ImportError: cannot import name 'get_device' from 'basicsr.utils.misc' (/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/basicsr/utils/misc.py)
+
+No module 'xformers'. Proceeding without it.
+2024-06-12 09:17:53,063 - ControlNet - [0;32mINFO[0m - ControlNet v1.1.219
+ControlNet preprocessor location: /home/lihao/git/stable-diffusion-webui/extensions/sd-webui-controlnet/annotator/downloads
+2024-06-12 09:17:53,121 - ControlNet - [0;32mINFO[0m - ControlNet v1.1.219
+Loading weights [7f96a1a9ca] from /home/lihao/git/stable-diffusion-webui/models/Stable-diffusion/anything-v5-PrtRE.safetensors

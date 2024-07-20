@@ -1,0 +1,6 @@
+{
+  "server_name": "sd",
+  "server_port": 26897,
+  "server_cmd": "sh /home/lihao/run_SD_web_ui.sh",
+  "server_readme": "Stable diffusion webui!"
+}

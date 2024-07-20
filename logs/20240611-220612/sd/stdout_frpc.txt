@@ -1,0 +1,4 @@
+2024/06/11 22:09:47 [1;34m[I] [service.go:301] [795757a58c641c16] login to server success, get run id [795757a58c641c16][0m
+2024/06/11 22:09:47 [1;34m[I] [proxy_manager.go:150] [795757a58c641c16] proxy added: [wsl-webui-sd][0m
+2024/06/11 22:09:47 [1;34m[I] [control.go:172] [795757a58c641c16] [wsl-webui-sd] start proxy success[0m
+2024/06/11 22:09:52 [1;31m[E] [proxy.go:196] [795757a58c641c16] [wsl-webui-sd] connect to local service [127.0.0.1:26897] error: dial tcp 127.0.0.1:26897: connect: connection refused[0m

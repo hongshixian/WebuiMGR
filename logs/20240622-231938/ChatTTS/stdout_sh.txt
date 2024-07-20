@@ -1,0 +1,12 @@
+INFO:ChatTTS.core:Load from cache: /home/lihao/.cache/huggingface/hub/models--2Noise--ChatTTS/snapshots/cc14302f34d7855eb3420d1fd48345012ff1460d
+INFO:ChatTTS.core:use cuda:0
+INFO:ChatTTS.core:vocos loaded.
+INFO:ChatTTS.core:dvae loaded.
+INFO:ChatTTS.core:gpt loaded.
+INFO:ChatTTS.core:decoder loaded.
+INFO:ChatTTS.core:tokenizer loaded.
+INFO:ChatTTS.core:All initialized.
+INFO:httpx:HTTP Request: GET https://checkip.amazonaws.com/ "HTTP/1.1 200 "
+INFO:httpx:HTTP Request: GET http://127.0.0.1:25386/startup-events "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD http://127.0.0.1:25386/ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"

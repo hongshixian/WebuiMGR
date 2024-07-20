@@ -1,0 +1,9 @@
+2024/06/19 20:16:59 [1;34m[I] [service.go:301] [802d8b46361043b1] login to server success, get run id [802d8b46361043b1][0m
+2024/06/19 20:16:59 [1;34m[I] [proxy_manager.go:150] [802d8b46361043b1] proxy added: [wsl-webui-webuimgr][0m
+2024/06/19 20:17:00 [1;34m[I] [control.go:172] [802d8b46361043b1] [wsl-webui-webuimgr] start proxy success[0m
+2024/06/19 20:30:09 [1;34m[I] [control.go:252] [802d8b46361043b1] control writer is closing[0m
+2024/06/19 20:30:09 [1;34m[I] [visitor_manager.go:77] [802d8b46361043b1] gracefully shutdown visitor manager[0m
+2024/06/19 20:30:09 [1;34m[I] [service.go:214] [802d8b46361043b1] try to reconnect to server...[0m
+2024/06/19 20:30:09 [1;34m[I] [service.go:301] [802d8b46361043b1] login to server success, get run id [802d8b46361043b1][0m
+2024/06/19 20:30:09 [1;34m[I] [proxy_manager.go:150] [802d8b46361043b1] proxy added: [wsl-webui-webuimgr][0m
+2024/06/19 20:30:09 [1;34m[I] [control.go:172] [802d8b46361043b1] [wsl-webui-webuimgr] start proxy success[0m

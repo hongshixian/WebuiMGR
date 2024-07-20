@@ -1,0 +1,3 @@
+2024/06/18 22:44:00 [1;34m[I] [service.go:301] [23cd13a0c5db0658] login to server success, get run id [23cd13a0c5db0658][0m
+2024/06/18 22:44:00 [1;34m[I] [proxy_manager.go:150] [23cd13a0c5db0658] proxy added: [wsl-webui-webuimgr][0m
+2024/06/18 22:44:00 [1;34m[I] [control.go:172] [23cd13a0c5db0658] [wsl-webui-webuimgr] start proxy success[0m

@@ -1,0 +1,6 @@
+{
+  "server_name": "chattts",
+  "server_port": 25386,
+  "server_cmd": "sh /home/lihao/run_ChatTTS_web_ui.sh",
+  "server_readme": "Chat TTS webui!"
+}

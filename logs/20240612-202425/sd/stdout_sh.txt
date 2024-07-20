@@ -1,0 +1,113 @@
+Warning: k_diffusion not found at path /home/lihao/git/stable-diffusion-webui/repositories/k-diffusion/k_diffusion/sampling.py
+/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN5torch3jit17parseSchemaOrNameERKSs'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Error setting up CodeFormer:
+Traceback (most recent call last):
+  File "/home/lihao/git/stable-diffusion-webui/modules/codeformer_model.py", line 37, in setup_model
+    from facelib.utils.face_restoration_helper import FaceRestoreHelper
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/utils/face_restoration_helper.py", line 7, in <module>
+    from facelib.detection import init_detection_model
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/detection/__init__.py", line 10, in <module>
+    from .retinaface.retinaface import RetinaFace
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/detection/retinaface/retinaface.py", line 14, in <module>
+    from basicsr.utils.misc import get_device
+ImportError: cannot import name 'get_device' from 'basicsr.utils.misc' (/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/basicsr/utils/misc.py)
+
+No module 'xformers'. Proceeding without it.
+2024-06-12 20:25:23,603 - ControlNet - [0;32mINFO[0m - ControlNet v1.1.219
+ControlNet preprocessor location: /home/lihao/git/stable-diffusion-webui/extensions/sd-webui-controlnet/annotator/downloads
+2024-06-12 20:25:23,670 - ControlNet - [0;32mINFO[0m - ControlNet v1.1.219
+Loading weights [7f96a1a9ca] from /home/lihao/git/stable-diffusion-webui/models/Stable-diffusion/anything-v5-PrtRE.safetensors
+Running on local URL:  http://127.0.0.1:26897
+
+To create a public link, set `share=True` in `launch()`.
+Startup time: 6.7s (import torch: 1.8s, import gradio: 0.9s, import ldm: 0.6s, other imports: 2.5s, load scripts: 0.4s, create ui: 0.2s, gradio launch: 0.1s).
+Creating model from config: /home/lihao/git/stable-diffusion-webui/configs/v1-inference.yaml
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 859.52 M params.
+Applying optimization: sdp-no-mem... done.
+Textual inversion embeddings loaded(0): 
+Model loaded in 3.0s (load weights from disk: 0.6s, create model: 0.3s, apply weights to model: 1.3s, apply half(): 0.4s, move model to device: 0.4s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:02<00:49,  2.59s/it]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 18.29it/s][A 15%|█▌        | 3/20 [00:02<00:12,  1.36it/s]
+Total progress:  25%|██▌       | 5/20 [00:00<00:01, 14.06it/s][A 25%|██▌       | 5/20 [00:02<00:06,  2.49it/s]
+Total progress:  35%|███▌      | 7/20 [00:00<00:00, 13.61it/s][A 35%|███▌      | 7/20 [00:03<00:03,  3.79it/s]
+Total progress:  45%|████▌     | 9/20 [00:00<00:00, 14.25it/s][A 45%|████▌     | 9/20 [00:03<00:02,  5.29it/s]
+Total progress:  55%|█████▌    | 11/20 [00:00<00:00, 13.60it/s][A 55%|█████▌    | 11/20 [00:03<00:01,  6.63it/s]
+Total progress:  65%|██████▌   | 13/20 [00:00<00:00, 13.74it/s][A 65%|██████▌   | 13/20 [00:03<00:00,  8.05it/s]
+Total progress:  75%|███████▌  | 15/20 [00:01<00:00, 12.85it/s][A 75%|███████▌  | 15/20 [00:03<00:00,  8.87it/s]
+Total progress:  85%|████████▌ | 17/20 [00:01<00:00, 11.94it/s][A 85%|████████▌ | 17/20 [00:03<00:00,  9.28it/s]
+Total progress:  95%|█████████▌| 19/20 [00:01<00:00, 12.14it/s][A 95%|█████████▌| 19/20 [00:04<00:00, 10.11it/s]100%|██████████| 20/20 [00:04<00:00,  4.83it/s]
+Error completing request
+Arguments: ('task(8jcx8vbi959x80a)', 'a beautiful boy', '', [], 20, 0, False, False, 1, 1, 7, -1.0, -1.0, 0, 0, 0, False, 512, 512, False, 0.7, 2, 'Latent', 0, 0, 0, 0, '', '', [], 0, <scripts.controlnet_ui.controlnet_ui_group.UiControlNetUnit object at 0x7f085bf15510>, False, False, 'positive', 'comma', 0, False, False, '', 1, '', [], 0, '', [], 0, '', [], True, False, False, False, 0, None, None, False, 50) {}
+Traceback (most recent call last):
+  File "/home/lihao/git/stable-diffusion-webui/modules/call_queue.py", line 57, in f
+    res = list(func(*args, **kwargs))
+  File "/home/lihao/git/stable-diffusion-webui/modules/call_queue.py", line 37, in f
+    res = func(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/txt2img.py", line 57, in txt2img
+    processed = processing.process_images(p)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 611, in process_images
+    res = process_images_inner(p)
+  File "/home/lihao/git/stable-diffusion-webui/extensions/sd-webui-controlnet/scripts/batch_hijack.py", line 42, in processing_process_images_hijack
+    return getattr(processing, '__controlnet_original_process_images_inner')(p, *args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 733, in process_images_inner
+    devices.test_for_nans(x, "vae")
+  File "/home/lihao/git/stable-diffusion-webui/modules/devices.py", line 156, in test_for_nans
+    raise NansException(message)
+modules.devices.NansException: A tensor with all NaNs was produced in VAE. This could be because there's not enough precision to represent the picture. Try adding --no-half-vae commandline argument to fix this. Use --disable-nan-check commandline argument to disable this check.
+
+
+Total progress: 100%|██████████| 20/20 [00:17<00:00, 12.14it/s][A  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress: 21it [00:25,  3.76s/it]                        [A  5%|▌         | 1/20 [00:00<00:04,  4.30it/s]
+Total progress: 23it [00:25,  2.63s/it][A 15%|█▌        | 3/20 [00:00<00:01,  8.99it/s]
+Total progress: 25it [00:25,  1.86s/it][A 25%|██▌       | 5/20 [00:00<00:01, 11.02it/s]
+Total progress: 27it [00:25,  1.32s/it][A 35%|███▌      | 7/20 [00:00<00:01, 12.24it/s]
+Total progress: 29it [00:26,  1.07it/s][A 45%|████▌     | 9/20 [00:00<00:00, 13.27it/s]
+Total progress: 31it [00:26,  1.48it/s][A 55%|█████▌    | 11/20 [00:00<00:00, 13.95it/s]
+Total progress: 33it [00:26,  2.03it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 14.03it/s]
+Total progress: 35it [00:26,  2.74it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 14.30it/s]
+Total progress: 37it [00:26,  3.62it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 14.43it/s]
+Total progress: 39it [00:26,  4.67it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 14.36it/s]100%|██████████| 20/20 [00:01<00:00, 13.01it/s]
+
+Total progress: 40it [00:27,  4.67it/s][ATotal progress: 40it [00:27,  1.48it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:06,  2.74it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:01, 15.92it/s][A 15%|█▌        | 3/20 [00:00<00:02,  6.08it/s]
+Total progress:  25%|██▌       | 5/20 [00:00<00:01, 13.99it/s][A 25%|██▌       | 5/20 [00:00<00:01,  8.25it/s]
+Total progress:  35%|███▌      | 7/20 [00:00<00:00, 14.15it/s][A 35%|███▌      | 7/20 [00:00<00:01, 10.07it/s]
+Total progress:  45%|████▌     | 9/20 [00:00<00:00, 13.30it/s][A 45%|████▌     | 9/20 [00:01<00:01, 10.73it/s]
+Total progress:  55%|█████▌    | 11/20 [00:00<00:00, 12.24it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 10.70it/s]
+Total progress:  65%|██████▌   | 13/20 [00:01<00:00, 12.18it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 11.13it/s]
+Total progress:  75%|███████▌  | 15/20 [00:01<00:00, 13.08it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 12.24it/s]
+Total progress:  85%|████████▌ | 17/20 [00:01<00:00, 13.67it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 13.03it/s]
+Total progress:  95%|█████████▌| 19/20 [00:01<00:00, 14.11it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 13.64it/s]100%|██████████| 20/20 [00:01<00:00, 10.93it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.11it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 12.33it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:05,  3.40it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 20.49it/s][A 15%|█▌        | 3/20 [00:00<00:02,  7.66it/s] 25%|██▌       | 5/20 [00:00<00:01,  9.82it/s]
+Total progress:  30%|███       | 6/20 [00:00<00:00, 15.63it/s][A 35%|███▌      | 7/20 [00:00<00:01, 11.06it/s]
+Total progress:  40%|████      | 8/20 [00:00<00:00, 14.69it/s][A 45%|████▌     | 9/20 [00:00<00:00, 11.76it/s]
+Total progress:  50%|█████     | 10/20 [00:00<00:00, 14.15it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 12.58it/s]
+Total progress:  60%|██████    | 12/20 [00:00<00:00, 14.59it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 13.43it/s]
+Total progress:  70%|███████   | 14/20 [00:00<00:00, 14.89it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 14.06it/s]
+Total progress:  80%|████████  | 16/20 [00:01<00:00, 15.06it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 14.14it/s]
+Total progress:  90%|█████████ | 18/20 [00:01<00:00, 14.54it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 14.24it/s]
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.81it/s][A100%|██████████| 20/20 [00:01<00:00, 12.26it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.81it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 13.39it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:05,  3.32it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 20.84it/s][A 15%|█▌        | 3/20 [00:00<00:02,  7.61it/s] 25%|██▌       | 5/20 [00:00<00:01,  9.78it/s]
+Total progress:  30%|███       | 6/20 [00:00<00:00, 15.68it/s][A 35%|███▌      | 7/20 [00:00<00:01, 11.03it/s]
+Total progress:  40%|████      | 8/20 [00:00<00:00, 15.07it/s][A 45%|████▌     | 9/20 [00:00<00:00, 12.01it/s]
+Total progress:  50%|█████     | 10/20 [00:00<00:00, 14.19it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 11.77it/s]
+Total progress:  60%|██████    | 12/20 [00:00<00:00, 13.61it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 12.19it/s]
+Total progress:  70%|███████   | 14/20 [00:00<00:00, 13.47it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 13.10it/s]
+Total progress:  80%|████████  | 16/20 [00:01<00:00, 14.02it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 12.92it/s]
+Total progress:  90%|█████████ | 18/20 [00:01<00:00, 12.80it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 12.12it/s]
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 12.05it/s][A100%|██████████| 20/20 [00:01<00:00, 11.21it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 12.05it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 12.25it/s]

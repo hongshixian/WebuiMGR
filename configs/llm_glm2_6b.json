@@ -1,0 +1,6 @@
+{
+  "server_name": "glm2_6b",
+  "server_port": 25386,
+  "server_cmd": "sh /home/lihao/run_LLM_web_ui.sh /home/lihao/git/chatglm2-6b 25386",
+  "server_readme": "Chat LLM webui!"
+}

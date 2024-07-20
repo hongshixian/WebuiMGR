@@ -1,0 +1,6 @@
+{
+  "server_name": "testPython",
+  "server_port": 965094,
+  "server_cmd": "python",
+  "server_readme": "no introduction!"
+}

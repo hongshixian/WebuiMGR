@@ -1,0 +1,276 @@
+Warning: k_diffusion not found at path /home/lihao/git/stable-diffusion-webui/repositories/k-diffusion/k_diffusion/sampling.py
+/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torchvision/io/image.py:13: UserWarning: Failed to load image Python extension: '/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torchvision/image.so: undefined symbol: _ZN5torch3jit17parseSchemaOrNameERKSs'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+Error setting up CodeFormer:
+Traceback (most recent call last):
+  File "/home/lihao/git/stable-diffusion-webui/modules/codeformer_model.py", line 37, in setup_model
+    from facelib.utils.face_restoration_helper import FaceRestoreHelper
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/utils/face_restoration_helper.py", line 7, in <module>
+    from facelib.detection import init_detection_model
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/detection/__init__.py", line 10, in <module>
+    from .retinaface.retinaface import RetinaFace
+  File "/home/lihao/git/stable-diffusion-webui/repositories/CodeFormer/facelib/detection/retinaface/retinaface.py", line 14, in <module>
+    from basicsr.utils.misc import get_device
+ImportError: cannot import name 'get_device' from 'basicsr.utils.misc' (/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/basicsr/utils/misc.py)
+
+No module 'xformers'. Proceeding without it.
+2024-06-16 19:52:47,164 - ControlNet - [0;32mINFO[0m - ControlNet v1.1.219
+ControlNet preprocessor location: /home/lihao/git/stable-diffusion-webui/extensions/sd-webui-controlnet/annotator/downloads
+2024-06-16 19:52:47,226 - ControlNet - [0;32mINFO[0m - ControlNet v1.1.219
+Loading weights [7c819b6d13] from /home/lihao/git/stable-diffusion-webui/models/Stable-diffusion/majicmixRealistic_v7.safetensors
+Running on local URL:  http://127.0.0.1:26897
+
+To create a public link, set `share=True` in `launch()`.
+Startup time: 7.2s (import torch: 1.9s, import gradio: 1.0s, import ldm: 0.7s, other imports: 2.7s, load scripts: 0.5s, create ui: 0.2s, gradio launch: 0.1s).
+Creating model from config: /home/lihao/git/stable-diffusion-webui/configs/v1-inference.yaml
+LatentDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 859.52 M params.
+Applying optimization: sdp-no-mem... done.
+Textual inversion embeddings loaded(0): 
+Model loaded in 2.8s (load weights from disk: 0.6s, create model: 0.3s, apply weights to model: 1.1s, apply half(): 0.4s, move model to device: 0.4s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:03<00:59,  3.12s/it]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 17.56it/s][A 15%|█▌        | 3/20 [00:03<00:14,  1.15it/s]
+Total progress:  25%|██▌       | 5/20 [00:00<00:00, 15.87it/s][A 25%|██▌       | 5/20 [00:03<00:06,  2.18it/s]
+Total progress:  35%|███▌      | 7/20 [00:00<00:00, 13.92it/s][A 35%|███▌      | 7/20 [00:03<00:03,  3.33it/s]
+Total progress:  45%|████▌     | 9/20 [00:00<00:00, 12.19it/s][A 45%|████▌     | 9/20 [00:03<00:02,  4.45it/s]
+Total progress:  55%|█████▌    | 11/20 [00:00<00:00, 12.21it/s][A 55%|█████▌    | 11/20 [00:03<00:01,  5.73it/s]
+Total progress:  65%|██████▌   | 13/20 [00:01<00:00, 12.13it/s][A 65%|██████▌   | 13/20 [00:04<00:01,  6.93it/s]
+Total progress:  75%|███████▌  | 15/20 [00:01<00:00, 11.45it/s][A 75%|███████▌  | 15/20 [00:04<00:00,  7.74it/s]
+Total progress:  85%|████████▌ | 17/20 [00:01<00:00, 12.24it/s][A 85%|████████▌ | 17/20 [00:04<00:00,  9.06it/s]
+Total progress:  95%|█████████▌| 19/20 [00:01<00:00, 12.02it/s][A 95%|█████████▌| 19/20 [00:04<00:00,  9.71it/s]100%|██████████| 20/20 [00:04<00:00,  4.25it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 12.02it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 11.23it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:05,  3.56it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 18.90it/s][A 15%|█▌        | 3/20 [00:00<00:02,  7.58it/s]
+Total progress:  25%|██▌       | 5/20 [00:00<00:01, 14.83it/s][A 25%|██▌       | 5/20 [00:00<00:01,  9.39it/s]
+Total progress:  35%|███▌      | 7/20 [00:00<00:00, 13.83it/s][A 35%|███▌      | 7/20 [00:00<00:01, 10.54it/s]
+Total progress:  45%|████▌     | 9/20 [00:00<00:00, 13.64it/s][A 45%|████▌     | 9/20 [00:00<00:00, 11.44it/s]
+Total progress:  55%|█████▌    | 11/20 [00:00<00:00, 13.05it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 11.64it/s]
+Total progress:  65%|██████▌   | 13/20 [00:00<00:00, 13.27it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 12.27it/s]
+Total progress:  75%|███████▌  | 15/20 [00:01<00:00, 13.07it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 12.41it/s]
+Total progress:  85%|████████▌ | 17/20 [00:01<00:00, 12.75it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 12.30it/s]
+Total progress:  95%|█████████▌| 19/20 [00:01<00:00, 12.85it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 12.53it/s]100%|██████████| 20/20 [00:01<00:00, 11.31it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 12.85it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 12.08it/s]
+Loading weights [7f96a1a9ca] from /home/lihao/git/stable-diffusion-webui/models/Stable-diffusion/anything-v5-PrtRE.safetensors
+Applying optimization: sdp-no-mem... done.
+Weights loaded in 2.0s (load weights from disk: 0.3s, apply weights to model: 1.2s, move model to device: 0.5s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:11,  1.66it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 22.58it/s][A 15%|█▌        | 3/20 [00:00<00:03,  4.86it/s] 25%|██▌       | 5/20 [00:00<00:02,  7.09it/s]
+Total progress:  30%|███       | 6/20 [00:00<00:00, 14.22it/s][A 35%|███▌      | 7/20 [00:01<00:01,  8.48it/s]
+Total progress:  40%|████      | 8/20 [00:00<00:00, 14.43it/s][A 45%|████▌     | 9/20 [00:01<00:01, 10.13it/s]
+Total progress:  50%|█████     | 10/20 [00:00<00:00, 13.53it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 10.72it/s]
+Total progress:  60%|██████    | 12/20 [00:00<00:00, 13.95it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 11.16it/s]
+Total progress:  70%|███████   | 14/20 [00:00<00:00, 13.33it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 12.16it/s]
+Total progress:  80%|████████  | 16/20 [00:01<00:00, 13.80it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 12.94it/s]
+Total progress:  90%|█████████ | 18/20 [00:01<00:00, 14.13it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 13.28it/s]
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.15it/s][A100%|██████████| 20/20 [00:02<00:00,  9.96it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.15it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 12.70it/s]
+Loading weights [7c819b6d13] from /home/lihao/git/stable-diffusion-webui/models/Stable-diffusion/majicmixRealistic_v7.safetensors
+Applying optimization: sdp-no-mem... done.
+Weights loaded in 1.8s (load weights from disk: 0.3s, apply weights to model: 1.0s, move model to device: 0.4s).
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:07,  2.63it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 22.19it/s][A 15%|█▌        | 3/20 [00:00<00:02,  6.72it/s] 25%|██▌       | 5/20 [00:00<00:01,  9.33it/s]
+Total progress:  30%|███       | 6/20 [00:00<00:00, 17.11it/s][A 35%|███▌      | 7/20 [00:00<00:01, 11.05it/s]
+Total progress:  40%|████      | 8/20 [00:00<00:00, 15.93it/s][A 45%|████▌     | 9/20 [00:00<00:00, 12.08it/s]
+Total progress:  50%|█████     | 10/20 [00:00<00:00, 15.57it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 12.93it/s]
+Total progress:  60%|██████    | 12/20 [00:00<00:00, 15.32it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 13.45it/s]
+Total progress:  70%|███████   | 14/20 [00:00<00:00, 15.10it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 13.89it/s]
+Total progress:  80%|████████  | 16/20 [00:01<00:00, 15.02it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 14.15it/s]
+Total progress:  90%|█████████ | 18/20 [00:01<00:00, 14.95it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 14.39it/s]
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.95it/s][A100%|██████████| 20/20 [00:01<00:00, 11.98it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.95it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 13.88it/s]
+  0%|          | 0/20 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/20 [00:00<?, ?it/s][A  5%|▌         | 1/20 [00:00<00:06,  2.73it/s]
+Total progress:  15%|█▌        | 3/20 [00:00<00:00, 22.71it/s][A 15%|█▌        | 3/20 [00:00<00:02,  6.95it/s] 25%|██▌       | 5/20 [00:00<00:01,  9.59it/s]
+Total progress:  30%|███       | 6/20 [00:00<00:00, 17.39it/s][A 35%|███▌      | 7/20 [00:00<00:01, 10.83it/s]
+Total progress:  40%|████      | 8/20 [00:00<00:00, 15.53it/s][A 45%|████▌     | 9/20 [00:00<00:00, 11.26it/s]
+Total progress:  50%|█████     | 10/20 [00:00<00:00, 13.99it/s][A 55%|█████▌    | 11/20 [00:01<00:00, 12.18it/s]
+Total progress:  60%|██████    | 12/20 [00:00<00:00, 14.32it/s][A 65%|██████▌   | 13/20 [00:01<00:00, 12.93it/s]
+Total progress:  70%|███████   | 14/20 [00:00<00:00, 13.82it/s][A 75%|███████▌  | 15/20 [00:01<00:00, 12.77it/s]
+Total progress:  80%|████████  | 16/20 [00:01<00:00, 13.93it/s][A 85%|████████▌ | 17/20 [00:01<00:00, 13.41it/s]
+Total progress:  90%|█████████ | 18/20 [00:01<00:00, 14.27it/s][A 95%|█████████▌| 19/20 [00:01<00:00, 13.88it/s]
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.50it/s][A100%|██████████| 20/20 [00:01<00:00, 11.64it/s]
+
+Total progress: 100%|██████████| 20/20 [00:01<00:00, 14.50it/s][ATotal progress: 100%|██████████| 20/20 [00:01<00:00, 13.20it/s]
+  0%|          | 0/69 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/69 [00:00<?, ?it/s][A  1%|▏         | 1/69 [00:00<00:12,  5.32it/s]
+Total progress:   4%|▍         | 3/69 [00:00<00:03, 17.93it/s][A  4%|▍         | 3/69 [00:00<00:07,  9.02it/s]
+Total progress:   7%|▋         | 5/69 [00:00<00:04, 13.14it/s][A  7%|▋         | 5/69 [00:00<00:06,  9.62it/s]
+Total progress:  10%|█         | 7/69 [00:00<00:04, 13.38it/s][A 10%|█         | 7/69 [00:00<00:05, 11.01it/s]
+Total progress:  13%|█▎        | 9/69 [00:00<00:05, 11.88it/s][A 13%|█▎        | 9/69 [00:00<00:05, 10.61it/s]
+Total progress:  16%|█▌        | 11/69 [00:00<00:04, 11.98it/s][A 16%|█▌        | 11/69 [00:01<00:05, 11.10it/s]
+Total progress:  19%|█▉        | 13/69 [00:01<00:04, 12.03it/s][A 19%|█▉        | 13/69 [00:01<00:04, 11.43it/s]
+Total progress:  22%|██▏       | 15/69 [00:01<00:04, 12.04it/s][A 22%|██▏       | 15/69 [00:01<00:04, 11.62it/s]
+Total progress:  25%|██▍       | 17/69 [00:01<00:04, 12.03it/s][A 25%|██▍       | 17/69 [00:01<00:04, 11.74it/s]
+Total progress:  28%|██▊       | 19/69 [00:01<00:04, 11.36it/s][A 28%|██▊       | 19/69 [00:01<00:04, 11.18it/s]
+Total progress:  30%|███       | 21/69 [00:01<00:04, 10.97it/s][A 30%|███       | 21/69 [00:01<00:04, 10.84it/s]
+Total progress:  33%|███▎      | 23/69 [00:01<00:03, 11.87it/s][A 33%|███▎      | 23/69 [00:02<00:03, 11.78it/s]
+Total progress:  36%|███▌      | 25/69 [00:02<00:03, 12.68it/s][A 36%|███▌      | 25/69 [00:02<00:03, 12.62it/s]
+Total progress:  39%|███▉      | 27/69 [00:02<00:03, 13.33it/s][A 39%|███▉      | 27/69 [00:02<00:03, 13.27it/s]
+Total progress:  42%|████▏     | 29/69 [00:02<00:02, 13.75it/s][A 42%|████▏     | 29/69 [00:02<00:02, 13.71it/s]
+Total progress:  45%|████▍     | 31/69 [00:02<00:02, 14.11it/s][A 45%|████▍     | 31/69 [00:02<00:02, 14.08it/s]
+Total progress:  48%|████▊     | 33/69 [00:02<00:02, 14.39it/s][A 48%|████▊     | 33/69 [00:02<00:02, 14.36it/s]
+Total progress:  51%|█████     | 35/69 [00:02<00:02, 14.55it/s][A 51%|█████     | 35/69 [00:02<00:02, 14.54it/s]
+Total progress:  54%|█████▎    | 37/69 [00:02<00:02, 14.72it/s][A 54%|█████▎    | 37/69 [00:03<00:02, 14.71it/s]
+Total progress:  57%|█████▋    | 39/69 [00:02<00:02, 14.85it/s][A 57%|█████▋    | 39/69 [00:03<00:02, 14.84it/s]
+Total progress:  59%|█████▉    | 41/69 [00:03<00:01, 14.84it/s][A 59%|█████▉    | 41/69 [00:03<00:01, 14.84it/s]
+Total progress:  62%|██████▏   | 43/69 [00:03<00:01, 14.92it/s][A 62%|██████▏   | 43/69 [00:03<00:01, 14.91it/s]
+Total progress:  65%|██████▌   | 45/69 [00:03<00:01, 14.97it/s][A 65%|██████▌   | 45/69 [00:03<00:01, 14.97it/s]
+Total progress:  68%|██████▊   | 47/69 [00:03<00:01, 14.96it/s][A 68%|██████▊   | 47/69 [00:03<00:01, 14.96it/s]
+Total progress:  71%|███████   | 49/69 [00:03<00:01, 14.97it/s][A 71%|███████   | 49/69 [00:03<00:01, 14.97it/s]
+Total progress:  74%|███████▍  | 51/69 [00:03<00:01, 15.00it/s][A 74%|███████▍  | 51/69 [00:03<00:01, 15.00it/s]
+Total progress:  77%|███████▋  | 53/69 [00:03<00:01, 15.01it/s][A 77%|███████▋  | 53/69 [00:04<00:01, 15.01it/s]
+Total progress:  80%|███████▉  | 55/69 [00:04<00:00, 15.03it/s][A 80%|███████▉  | 55/69 [00:04<00:00, 15.03it/s]
+Total progress:  83%|████████▎ | 57/69 [00:04<00:00, 15.01it/s][A 83%|████████▎ | 57/69 [00:04<00:00, 15.01it/s]
+Total progress:  86%|████████▌ | 59/69 [00:04<00:00, 15.03it/s][A 86%|████████▌ | 59/69 [00:04<00:00, 15.02it/s]
+Total progress:  88%|████████▊ | 61/69 [00:04<00:00, 15.02it/s][A 88%|████████▊ | 61/69 [00:04<00:00, 15.02it/s]
+Total progress:  91%|█████████▏| 63/69 [00:04<00:00, 15.02it/s][A 91%|█████████▏| 63/69 [00:04<00:00, 15.02it/s]
+Total progress:  94%|█████████▍| 65/69 [00:04<00:00, 15.01it/s][A 94%|█████████▍| 65/69 [00:04<00:00, 15.01it/s]
+Total progress:  97%|█████████▋| 67/69 [00:04<00:00, 15.02it/s][A 97%|█████████▋| 67/69 [00:05<00:00, 15.00it/s]
+Total progress: 100%|██████████| 69/69 [00:04<00:00, 15.00it/s][A100%|██████████| 69/69 [00:05<00:00, 15.01it/s]100%|██████████| 69/69 [00:05<00:00, 13.39it/s]
+
+Total progress: 100%|██████████| 69/69 [00:05<00:00, 15.00it/s][ATotal progress: 100%|██████████| 69/69 [00:05<00:00, 13.52it/s]Traceback (most recent call last):
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/gradio/routes.py", line 414, in run_predict
+    output = await app.get_blocks().process_api(
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/gradio/blocks.py", line 1323, in process_api
+    result = await self.call_function(
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/gradio/blocks.py", line 1051, in call_function
+    prediction = await anyio.to_thread.run_sync(
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/anyio/to_thread.py", line 33, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+    return await future
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+    result = context.run(func, *args)
+  File "/home/lihao/git/stable-diffusion-webui/modules/ui.py", line 1002, in <lambda>
+    fn=lambda *args: process_interrogate(interrogate, *args),
+  File "/home/lihao/git/stable-diffusion-webui/modules/ui.py", line 137, in process_interrogate
+    return [interrogation_function(ii_singles[mode]), None]
+  File "/home/lihao/git/stable-diffusion-webui/modules/ui.py", line 159, in interrogate
+    prompt = shared.interrogator.interrogate(image.convert("RGB"))
+AttributeError: 'NoneType' object has no attribute 'convert'
+
+  0%|          | 0/16 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/16 [00:00<?, ?it/s][A  6%|▋         | 1/16 [00:00<00:06,  2.39it/s]
+Total progress:  19%|█▉        | 3/16 [00:00<00:00, 15.73it/s][A 19%|█▉        | 3/16 [00:00<00:02,  5.58it/s]
+Total progress:  31%|███▏      | 5/16 [00:00<00:00, 14.74it/s][A 31%|███▏      | 5/16 [00:00<00:01,  8.04it/s]
+Total progress:  44%|████▍     | 7/16 [00:00<00:00, 12.97it/s][A 44%|████▍     | 7/16 [00:00<00:00,  9.09it/s]
+Total progress:  56%|█████▋    | 9/16 [00:01<00:01,  6.29it/s][A 56%|█████▋    | 9/16 [00:01<00:01,  5.51it/s]
+Total progress:  69%|██████▉   | 11/16 [00:01<00:00,  7.83it/s][A 69%|██████▉   | 11/16 [00:01<00:00,  7.07it/s]
+Total progress:  81%|████████▏ | 13/16 [00:01<00:00,  9.17it/s][A 81%|████████▏ | 13/16 [00:01<00:00,  8.44it/s]
+Total progress:  94%|█████████▍| 15/16 [00:01<00:00, 10.38it/s][A 94%|█████████▍| 15/16 [00:01<00:00,  9.78it/s]100%|██████████| 16/16 [00:02<00:00,  7.94it/s]
+
+Total progress: 100%|██████████| 16/16 [00:01<00:00, 10.38it/s][ATotal progress: 100%|██████████| 16/16 [00:01<00:00,  8.94it/s]
+  0%|          | 0/16 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/16 [00:00<?, ?it/s][A  6%|▋         | 1/16 [00:00<00:01,  8.92it/s]
+Total progress:  19%|█▉        | 3/16 [00:00<00:00, 19.37it/s][A 19%|█▉        | 3/16 [00:00<00:01, 11.58it/s]
+Total progress:  31%|███▏      | 5/16 [00:00<00:00, 16.69it/s][A 31%|███▏      | 5/16 [00:00<00:00, 12.95it/s]
+Total progress:  44%|████▍     | 7/16 [00:00<00:00, 14.16it/s][A 44%|████▍     | 7/16 [00:00<00:00, 12.35it/s]
+Total progress:  56%|█████▋    | 9/16 [00:00<00:00, 13.60it/s][A 56%|█████▋    | 9/16 [00:00<00:00, 12.50it/s]
+Total progress:  69%|██████▉   | 11/16 [00:00<00:00, 14.04it/s][A 69%|██████▉   | 11/16 [00:00<00:00, 13.26it/s]
+Total progress:  81%|████████▏ | 13/16 [00:00<00:00, 13.99it/s][A 81%|████████▏ | 13/16 [00:01<00:00, 13.47it/s]
+Total progress:  94%|█████████▍| 15/16 [00:01<00:00, 13.37it/s][A 94%|█████████▍| 15/16 [00:01<00:00, 13.03it/s]100%|██████████| 16/16 [00:01<00:00, 12.81it/s]
+
+Total progress: 100%|██████████| 16/16 [00:01<00:00, 13.37it/s][ATotal progress: 100%|██████████| 16/16 [00:01<00:00, 12.30it/s]
+  0%|          | 0/16 [00:00<?, ?it/s]
+Total progress:   0%|          | 0/16 [00:00<?, ?it/s][A  6%|▋         | 1/16 [00:00<00:04,  3.45it/s]
+Total progress:  12%|█▎        | 2/16 [00:00<00:01, 12.39it/s][A 12%|█▎        | 2/16 [00:00<00:03,  4.67it/s] 19%|█▉        | 3/16 [00:00<00:02,  5.27it/s]
+Total progress:  25%|██▌       | 4/16 [00:00<00:01,  7.81it/s][A 25%|██▌       | 4/16 [00:00<00:02,  5.59it/s]
+Total progress:  31%|███▏      | 5/16 [00:00<00:01,  7.23it/s][A 31%|███▏      | 5/16 [00:00<00:01,  5.78it/s]
+Total progress:  38%|███▊      | 6/16 [00:00<00:01,  6.86it/s][A 38%|███▊      | 6/16 [00:01<00:01,  5.89it/s]
+Total progress:  44%|████▍     | 7/16 [00:00<00:01,  6.64it/s][A 44%|████▍     | 7/16 [00:01<00:01,  5.98it/s]
+Total progress:  50%|█████     | 8/16 [00:01<00:02,  3.60it/s][A 50%|█████     | 8/16 [00:01<00:02,  3.30it/s]
+Total progress:  56%|█████▋    | 9/16 [00:01<00:01,  3.64it/s][A 56%|█████▋    | 9/16 [00:02<00:02,  3.48it/s]
+Total progress:  62%|██████▎   | 10/16 [00:01<00:01,  4.14it/s][A 62%|██████▎   | 10/16 [00:02<00:01,  4.02it/s]
+Total progress:  69%|██████▉   | 11/16 [00:02<00:01,  4.59it/s][A 69%|██████▉   | 11/16 [00:02<00:01,  4.49it/s]
+Total progress:  75%|███████▌  | 12/16 [00:02<00:00,  4.96it/s][A 75%|███████▌  | 12/16 [00:02<00:00,  4.89it/s]
+Total progress:  81%|████████▏ | 13/16 [00:02<00:00,  5.26it/s][A 81%|████████▏ | 13/16 [00:02<00:00,  5.21it/s]
+Total progress:  88%|████████▊ | 14/16 [00:02<00:00,  5.49it/s][A 88%|████████▊ | 14/16 [00:02<00:00,  5.45it/s]
+Total progress:  94%|█████████▍| 15/16 [00:02<00:00,  5.58it/s][A 94%|█████████▍| 15/16 [00:03<00:00,  5.55it/s]
+Total progress: 100%|██████████| 16/16 [00:02<00:00,  5.73it/s][A100%|██████████| 16/16 [00:03<00:00,  5.71it/s]100%|██████████| 16/16 [00:03<00:00,  4.91it/s]
+
+Total progress: 100%|██████████| 16/16 [00:03<00:00,  5.73it/s][ATotal progress: 100%|██████████| 16/16 [00:03<00:00,  4.82it/s]Error completing request
+Arguments: ('task(oc09aq3kw4vwrms)', 2, '', '', [], None, None, {'image': <PIL.Image.Image image mode=RGBA size=3000x4000 at 0x7F944530F370>, 'mask': <PIL.PngImagePlugin.PngImageFile image mode=RGBA size=3000x4000 at 0x7F944530F940>}, None, None, None, None, 20, 0, 4, 0, 1, False, False, 1, 1, 7, 1.5, 0.75, -1.0, -1.0, 0, 0, 0, False, 1, 2048, 512, 1, 0, 0, 32, 0, '', '', '', [], 0, <scripts.controlnet_ui.controlnet_ui_group.UiControlNetUnit object at 0x7f94366dff40>, '<ul>\n<li><code>CFG Scale</code> should be 2 or lower.</li>\n</ul>\n', True, True, '', '', True, 50, True, 1, 0, False, 4, 0.5, 'Linear', 'None', '<p style="margin-bottom:0.75em">Recommended settings: Sampling Steps: 80-100, Sampler: Euler a, Denoising strength: 0.8</p>', 128, 8, ['left', 'right', 'up', 'down'], 1, 0.05, 128, 4, 0, ['left', 'right', 'up', 'down'], False, False, 'positive', 'comma', 0, False, False, '', '<p style="margin-bottom:0.75em">Will upscale the image by the selected scale factor; use width and height sliders to set tile size</p>', 64, 0, 2, 1, '', [], 0, '', [], 0, '', [], True, False, False, False, 0, None, None, False, 50) {}
+Traceback (most recent call last):
+  File "/home/lihao/git/stable-diffusion-webui/modules/call_queue.py", line 57, in f
+    res = list(func(*args, **kwargs))
+  File "/home/lihao/git/stable-diffusion-webui/modules/call_queue.py", line 37, in f
+    res = func(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/img2img.py", line 178, in img2img
+    processed = process_images(p)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 611, in process_images
+    res = process_images_inner(p)
+  File "/home/lihao/git/stable-diffusion-webui/extensions/sd-webui-controlnet/scripts/batch_hijack.py", line 42, in processing_process_images_hijack
+    return getattr(processing, '__controlnet_original_process_images_inner')(p, *args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 671, in process_images_inner
+    p.init(p.all_prompts, p.all_seeds, p.all_subseeds)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 1231, in init
+    self.init_latent = self.sd_model.get_first_stage_encoding(self.sd_model.encode_first_stage(image))
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_utils.py", line 17, in <lambda>
+    setattr(resolved_obj, func_path[-1], lambda *args, **kwargs: self(*args, **kwargs))
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_utils.py", line 28, in __call__
+    return self.__orig_func(*args, **kwargs)
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/repositories/stable-diffusion-stability-ai/ldm/models/diffusion/ddpm.py", line 830, in encode_first_stage
+    return self.first_stage_model.encode(x)
+  File "/home/lihao/git/stable-diffusion-webui/repositories/stable-diffusion-stability-ai/ldm/models/autoencoder.py", line 83, in encode
+    h = self.encoder(x)
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/repositories/stable-diffusion-stability-ai/ldm/modules/diffusionmodules/model.py", line 536, in forward
+    h = self.mid.attn_1(h)
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_optimizations.py", line 620, in sdp_no_mem_attnblock_forward
+    return sdp_attnblock_forward(self, x)
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_optimizations.py", line 612, in sdp_attnblock_forward
+    out = torch.nn.functional.scaled_dot_product_attention(q, k, v, dropout_p=0.0, is_causal=False)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 65.48 GiB (GPU 0; 24.00 GiB total capacity; 18.08 GiB already allocated; 0 bytes free; 22.22 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
+Error completing request
+Arguments: ('task(urjt84jr9dtkudy)', 2, '', '', [], None, None, {'image': <PIL.Image.Image image mode=RGBA size=3000x4000 at 0x7F9446B25F60>, 'mask': <PIL.PngImagePlugin.PngImageFile image mode=RGBA size=3000x4000 at 0x7F9446B24D00>}, None, None, None, None, 20, 0, 62, 0, 1, False, False, 1, 1, 7, 1.5, 0.75, -1.0, -1.0, 0, 0, 0, False, 1, 2048, 512, 1, 0, 0, 32, 0, '', '', '', [], 0, <scripts.controlnet_ui.controlnet_ui_group.UiControlNetUnit object at 0x7f944530c700>, '<ul>\n<li><code>CFG Scale</code> should be 2 or lower.</li>\n</ul>\n', True, True, '', '', True, 50, True, 1, 0, False, 4, 0.5, 'Linear', 'None', '<p style="margin-bottom:0.75em">Recommended settings: Sampling Steps: 80-100, Sampler: Euler a, Denoising strength: 0.8</p>', 128, 8, ['left', 'right', 'up', 'down'], 1, 0.05, 128, 4, 0, ['left', 'right', 'up', 'down'], False, False, 'positive', 'comma', 0, False, False, '', '<p style="margin-bottom:0.75em">Will upscale the image by the selected scale factor; use width and height sliders to set tile size</p>', 64, 0, 2, 1, '', [], 0, '', [], 0, '', [], True, False, False, False, 0, None, None, False, 50) {}
+Traceback (most recent call last):
+  File "/home/lihao/git/stable-diffusion-webui/modules/call_queue.py", line 57, in f
+    res = list(func(*args, **kwargs))
+  File "/home/lihao/git/stable-diffusion-webui/modules/call_queue.py", line 37, in f
+    res = func(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/img2img.py", line 178, in img2img
+    processed = process_images(p)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 611, in process_images
+    res = process_images_inner(p)
+  File "/home/lihao/git/stable-diffusion-webui/extensions/sd-webui-controlnet/scripts/batch_hijack.py", line 42, in processing_process_images_hijack
+    return getattr(processing, '__controlnet_original_process_images_inner')(p, *args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 671, in process_images_inner
+    p.init(p.all_prompts, p.all_seeds, p.all_subseeds)
+  File "/home/lihao/git/stable-diffusion-webui/modules/processing.py", line 1231, in init
+    self.init_latent = self.sd_model.get_first_stage_encoding(self.sd_model.encode_first_stage(image))
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_utils.py", line 17, in <lambda>
+    setattr(resolved_obj, func_path[-1], lambda *args, **kwargs: self(*args, **kwargs))
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_utils.py", line 28, in __call__
+    return self.__orig_func(*args, **kwargs)
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/repositories/stable-diffusion-stability-ai/ldm/models/diffusion/ddpm.py", line 830, in encode_first_stage
+    return self.first_stage_model.encode(x)
+  File "/home/lihao/git/stable-diffusion-webui/repositories/stable-diffusion-stability-ai/ldm/models/autoencoder.py", line 83, in encode
+    h = self.encoder(x)
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/repositories/stable-diffusion-stability-ai/ldm/modules/diffusionmodules/model.py", line 536, in forward
+    h = self.mid.attn_1(h)
+  File "/home/lihao/mambaforge-pypy3/envs/SD_web/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_optimizations.py", line 620, in sdp_no_mem_attnblock_forward
+    return sdp_attnblock_forward(self, x)
+  File "/home/lihao/git/stable-diffusion-webui/modules/sd_hijack_optimizations.py", line 612, in sdp_attnblock_forward
+    out = torch.nn.functional.scaled_dot_product_attention(q, k, v, dropout_p=0.0, is_causal=False)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 65.48 GiB (GPU 0; 24.00 GiB total capacity; 18.08 GiB already allocated; 0 bytes free; 22.22 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+
