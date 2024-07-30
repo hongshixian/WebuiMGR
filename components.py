@@ -92,6 +92,7 @@ class ModelCard:
         name = f"{self.model_name}"
         info = f"模型信息暂略"
 
+
         with gr.Accordion(name, open=False) as box:
             model_info = gr.Markdown(info)
             with gr.Row():
